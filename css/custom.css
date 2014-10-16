@@ -1,0 +1,167 @@
+html, body
+{
+	padding: 0;
+	margin: 0;
+}
+.clear:after, .row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+body {
+	background-color: #f9f9f9;
+	font-family: Arial, Helvetica, Verdana;
+	font-size: 14px;
+	line-height: 22px;
+	color: #333;
+	position: relative;
+	-webkit-text-size-adjust: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body *
+{
+	text-shadow: none;
+}
+a {
+	color: #fff;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+#page {
+	position: relative;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+header {
+	position: relative;
+}
+.leftM, .rightM {
+	background: #08568d;
+	float: left;
+}
+
+.rightM li {
+	float: left;
+	margin: 0 5px;
+}
+.rightM li a, .leftM  li a {
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+}
+.rightM li a:hover, .leftM  li a:hover {
+	background: #04426e;
+}
+.rightM {
+	float: right;
+	width: 100%;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.4);
+}
+.leftM {
+	width: 200px;
+}
+.leftM ul {
+	padding: 10px;
+}
+.leftM  li {
+	display: block;
+	line-height: 30px;
+}
+
+
+
+.slider {
+    width: 700px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+    padding: 10px;
+}
+.slider img {
+  width: 100%;
+}
+.leftNav, .rightNav {
+	display: none;
+	color: #000;
+	float: left;
+}
+.rightNav {
+	float: right;
+}
+
+
+@media all and (min-width: 320px) and (max-width:900px) { 
+	body.activeLeftMenu, body.activeRightMenu {
+		overflow: scroll;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.container {
+		width: auto;
+	}
+	.slider {
+		width: auto;
+	}
+	.leftM, .rightM {
+		position: fixed;
+		width: 60%;		
+		float: none;
+		height: 100%;
+		overflow: auto;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		top: 0;
+	}
+	.leftM ul, .rightM ul {
+		padding: 20px;
+	}
+	.leftM ul li, .rightM ul li {
+		display: block;
+		float: none;
+	}
+	.leftM {
+		left: -60%
+	}
+	.rightM {
+		right: -60%
+	}
+	.leftNav, .rightNav {
+		display: block;
+		color: #fff;
+		font-size: 20px;
+		position: absolute;
+		top: -5px;
+		background: #04426e;
+		padding: 3px 5px;
+		width: 20px;
+		height: 20px;
+		text-align: center;
+		line-height: 20px;
+	}
+	.leftNav {
+		left: -15px;
+	}
+	.rightNav {
+		right: -15px;
+	}
+	.topHead {
+		padding: 0 20px;
+	}
+
+
+
+}
